@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Fundamentals</title>
+  </head>
+  <body>
+    <style>
+      .challenge {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 75%;
+        margin: 0 auto;
+      }
+      .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+      }
+
+      button {
+        padding: 10px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+      .click {
+        background-color: blue;
+        color: #fff;
+      }
+      .reset {
+        background-color: red;
+        color: #fff;
+      }
+      .cat-gen{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+      }
+
+      .cat-gen img{
+        width: 150px;
+      }
+    </style>
+    <div class="challenge">
+      <h1>Challenge: Your age in days</h1>
+      <div class="button">
+        <button class="click" onclick="ageInDays()">Click me</button>
+        <button class="reset" onclick="reset()">reset</button>
+      </div>
+      <div
+        class="result"
+        style="border: 1px solid black; margin-top: 20px; padding: 5px"
+      >
+        <h1 id="result"></h1>
+
+      </div>
+      <h1>Challenge 2: Cat generator</h1>
+      <div class="button">
+        <button class="click" onclick="generateCat()">Generate Cat</button>
+      </div>
+      <div
+        class="cat-gen" id="cat-gen"
+        style="border: 1px solid black; margin-top: 20px; padding: 5px"
+      >
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
